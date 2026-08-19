@@ -1,0 +1,35 @@
+*{
+  
+  
+  
+
+  margin:0;
+  padding: 0;
+  color: white;  
+  box-sizing: border-box;
+}
+.Homepage{
+  min-height:100dvh;
+  padding-top: 68px;
+  background:#1a1a1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  gap: 40px;
+}
+.Homepage::before{
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0,0,0,0.2),
+    rgba(0,0,0,0.2) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+  pointer-events: none;
+  z-index: 9999;
+}

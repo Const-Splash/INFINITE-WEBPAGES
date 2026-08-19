@@ -1,0 +1,38 @@
+.Card1 ,.Card2{
+  width: 100%;
+  max-width: 420px;
+  background: rgba(0,0,0,0.75);
+  border: 1px solid rgba(0,0,0
+    ,0.75);
+  border-radius: 14px;
+  padding: 20px 28px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transform: translateY(60px);
+}
+.Card1{
+  animation: slideUp 0.6s forwards;
+}
+.Card2{
+  animation: slideUp 0.6s forwards 0.3s;
+}
+@keyframes slideUp{
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.Card1 p, .Card2 p{
+  color: #00ff88;
+  font-family: 'Courier New', monospace;
+  text-shadow: 0 0 5px #00ff88;
+  margin: 0;
+}
+.Card1 h2, .Card2 h3{
+  color: #fff;
+  text-shadow:0 0 8px rgba(255,255,255,0.4);
+  letter-spacing: 2px;
+  margin: 20px 0 0 0;
+} 
